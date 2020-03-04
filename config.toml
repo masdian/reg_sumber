@@ -2,7 +2,7 @@
 baseurl = "https://masdian.netlify.com/"
 languageCode = "en"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-title = "Registrasi dan Statistik"
+title = "Registrasi"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
@@ -43,14 +43,7 @@ theme = "hyde-hyde"
 
 ## Social Accounts
 [params.social]
-    github = "<username>"
-    instagram = "<username>"
-    xing = "<username>"
-    linkedin = "<username>"
-    twitter = "<username>"
-    facebook = "<username>"
-    stackoverflow = "<username>"
-    telegram = "<username>"
+    twitter = "riana.hadiana"
     email = "registrasi@untirta.ac.id"
     # gravatar = "your-email@example.com"
 
