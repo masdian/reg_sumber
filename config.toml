@@ -16,10 +16,10 @@ theme = "hyde-hyde"
 
 ## Site Settings
 [params]
-    author = "Author"
-    title = "Title"
+    author = "Riana Hadiana"
+    title = "Registrasi dan Statistik Untirta"
     # description = "..."
-    authorimage = "/img/hugo.png"
+    authorimage = "/img/logo.jpg"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
@@ -43,7 +43,7 @@ theme = "hyde-hyde"
 
 ## Social Accounts
 [params.social]
-    twitter = "riana.hadiana"
+    twitter = "@rianahadiana"
     email = "registrasi@untirta.ac.id"
     # gravatar = "your-email@example.com"
 
