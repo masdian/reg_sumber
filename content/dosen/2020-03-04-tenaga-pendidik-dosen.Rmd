@@ -1,14 +1,14 @@
 ---
-title: Tenaga Pendidik (Dosen)
-author: Riana Hadiana
+title: "Tenaga Pendidik (Dosen)"
+author: "Riana Hadiana"
 date: '2020-03-04'
-slug: tenaga-pendidik-dosen
-categories: []
-tags: []
+highlight: no
 lastmod: '2020-03-04T14:46:29+07:00'
 layout: post
+slug: tenaga-pendidik-dosen
+tags: []
+categories: []
 type: post
-highlight: no
 ---
 
 Saat ini Universitas Sultan Ageng Tirtayasa memiliki 619 dosen PNS. Dosen PNS di Universitas Sultan Ageng Tirtayasa tersebar di 6 Fakultas, di antaranya:
