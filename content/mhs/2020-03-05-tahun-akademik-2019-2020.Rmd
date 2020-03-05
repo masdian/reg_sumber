@@ -1,0 +1,41 @@
+---
+title: Tahun Akademik 2019/2020
+author: Riana Hadiana
+date: '2020-03-05'
+slug: tahun-akademik-2019-2020
+categories: []
+tags: []
+lastmod: '2020-03-05T16:30:29+07:00'
+layout: post
+type: post
+highlight: no
+---
+
+### Mahasiswa Baru D3 dan S1
+
+Tahun 2019 Universitas Sultan Ageng Tirtayasa secara resmi menerima 4.134 mahasiswa baru jenjang S1 dan D3. Berikut adalah statistik mahasiswa baru Universitas Sultan Ageng Tirtayasa tahun akademik 2019/2020.
+
+**Mahasiwa baru berdasarkan Jalur Masuk dan Jenis Kelamin**
+
+![](/mhs/2020-03-05-tahun-akademik-2019-2020_files/02_JK.jpg)
+
+**Mahasiswa baru berdasarkan Jalur Masuk di setiap Fakultas**
+
+![](/mhs/2020-03-05-tahun-akademik-2019-2020_files/03_FAK.jpg)
+
+**Mahasiswa Baru berdasarkan Jalur Masuk di setiap Program Studi**
+
+![](/mhs/2020-03-05-tahun-akademik-2019-2020_files/01_Fak Prodi.jpg)
+
+**Mahasiswa Baru berdasarkan Jalur Masuk dan Provinsi Asal**
+
+![](/mhs/2020-03-05-tahun-akademik-2019-2020_files/04_PROV.jpg)
+
+**Mahasiswa Baru berdasarkan Jalur Masuk dan Kategori Penghasilan Orang Tua**
+
+![](/mhs/2020-03-05-tahun-akademik-2019-2020_files/05_Penghasilan Ortu.jpg)
+
+**Mahasiswa Baru berdasarkan Jalur Masuk dan Pendidikan Terakhir Orang Tua**
+
+![](/mhs/2020-03-05-tahun-akademik-2019-2020_files/06_PendTerahirOrtu.jpg)
+
