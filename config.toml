@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://masdian.netlify.com/"
+baseurl = "https://masdian.netlify.com"
 languageCode = "en"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 title = "Registrasi"

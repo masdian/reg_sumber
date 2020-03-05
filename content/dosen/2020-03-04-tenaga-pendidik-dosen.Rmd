@@ -11,15 +11,9 @@ type: post
 highlight: no
 ---
 
-**Insert Lead paragraph here.**
+Saat ini Universitas Sultan Ageng Tirtayasa memiliki 619 dosen PNS. Dosen PNS di Universitas Sultan Ageng Tirtayasa tersebar di 6 Fakultas, di antaranya:
 
-Saat ini Universitas Sultan Ageng Tirtayasa memiliki 619 dosen PNS dan 148 dosen non PNS.
-
-### Dosen PNS
-
-Dosen PNS Untirta tersebar di 6 Fakultas, di antaranya :
-
-* Fkultas Hukum (52)
+* Fakultas Hukum (52)
 * FKIP (174)
 * Fakultas Teknik (138)
 * Fakultas Pertanian (70)
@@ -27,19 +21,67 @@ Dosen PNS Untirta tersebar di 6 Fakultas, di antaranya :
 * FISIP (57)
 * Fakultas Kedokteran (19)
 
-Sebaran lengkap dosen PNS di Untirta bisa dilihat pada diagram berikut.
+Sebaran lengkap dosen PNS Universitas Sultan Ageng Tirtayasa di tiap fakultas bisa dilihat pada diagram berikut.
 
 ```{r, echo=FALSE}
 dosen <- read.csv("dosen.csv", sep = ";")
 dosen <- dosen[, 1:9]
+library(ggplot2, warn.conflicts = F)
 library(dplyr, warn.conflicts = F)
 library(plotly, warn.conflicts = F)
 plot_ly(dosen, x = ~FAKULTAS) %>%
   add_histogram()
 ```
 
+Berikut adalah sebaran dosen PNS Universitas Sultan Ageng Tirtayasa berdasarkan jenis kelamin.
 
-Berikut adalah daftar dosen PNS di Universitas Sultan Ageng Tirtayasa.
+```{r, echo=FALSE}
+jk <- dosen %>%
+  group_by(JK) %>%
+  summarize(banyak = n())
+
+plot_ly(type = "pie", labels = jk$JK, values = jk$banyak,
+        textinfo = "label+percent",
+        insidetextorientation = "radial")
+```
+
+
+Berikut adalah sebaran dosen PNS Universitas Sultan Ageng Tirtayasa berdasarkan tingkat pendidikan.
+
+```{r, echo=FALSE}
+pendidikan <- dosen %>%
+  group_by(PENDIDIKAN) %>%
+  summarize(banyak = n())
+pendidikan
+
+plot_ly(type = "pie", labels = pendidikan$PENDIDIKAN, values = pendidikan$banyak,
+        textinfo = "label+percent",
+        insidetextorientation = "radial")
+```
+
+Berikut adalah sebaran dosen PNS Universitas Sultan Ageng Tirtayasa berdasarkan golongan.
+
+```{r, echo=FALSE}
+plot_ly(dosen, x = ~GOL) %>%
+  add_histogram()
+```
+
+Berikut adalah sebaran dosen PNS Universitas Sultan Ageng Tirtayasa berdasarkan jabatan akademik.
+
+```{r, echo=FALSE}
+jabatan <- dosen %>%
+  group_by(JABATAN) %>%
+  summarize(banyak = n())
+
+jabatan$JABATAN <- c("Asisten Ahli", "Guru Besar", "Lektor",
+                     "Lektor Kepala", "Tenaga Pengajar")
+
+plot_ly(type = "pie", labels = jabatan$JABATAN, values = jabatan$banyak,
+        textinfo = "label+percent",
+        insidetextorientation = "radial")
+```
+
+Berikut adalah daftar nama dosen PNS di Universitas Sultan Ageng Tirtayasa.
 
 ```{r, echo=FALSE}
 dosen <- read.csv("dosen.csv", sep = ";")
