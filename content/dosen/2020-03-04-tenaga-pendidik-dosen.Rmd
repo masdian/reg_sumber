@@ -15,7 +15,7 @@ highlight: no
 
 Saat ini Universitas Sultan Ageng Tirtayasa memiliki 619 dosen PNS dan 148 dosen non PNS.
 
-## Dosen PNS
+### Dosen PNS
 
 Dosen PNS Untirta tersebar di 6 Fakultas, di antaranya :
 
@@ -29,6 +29,16 @@ Dosen PNS Untirta tersebar di 6 Fakultas, di antaranya :
 
 Sebaran lengkap dosen PNS di Untirta bisa dilihat pada diagram berikut.
 
+```{r, echo=FALSE}
+dosen <- read.csv("dosen.csv", sep = ";")
+dosen <- dosen[, 1:9]
+library(dplyr, warn.conflicts = F)
+library(plotly, warn.conflicts = F)
+plot_ly(dosen, x = ~FAKULTAS) %>%
+  add_histogram()
+```
+
+
 Berikut adalah daftar dosen PNS di Universitas Sultan Ageng Tirtayasa.
 
 ```{r, echo=FALSE}
@@ -36,6 +46,4 @@ dosen <- read.csv("dosen.csv", sep = ";")
 DT::datatable(dosen[,c(1, 3, 4, 7:9)])
 ```
 
-### Heading 3
 
-At quisque litora ullamcorper maecenas ultricies ut dignissim luctus curabitur, cras congue eget primis aliquam fringilla nulla dictum posuere, vestibulum sit magnis nisl praesent eros ipsum nunc. Ligula lacus ipsum orci aenean integer pharetra habitasse interdum, porttitor etiam hac feugiat placerat morbi posuere turpis leo, quam at amet gravida commodo fringilla erat.
