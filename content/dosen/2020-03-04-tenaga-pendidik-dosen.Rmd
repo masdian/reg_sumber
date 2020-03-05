@@ -52,7 +52,6 @@ Berikut adalah sebaran dosen PNS Universitas Sultan Ageng Tirtayasa berdasarkan 
 pendidikan <- dosen %>%
   group_by(PENDIDIKAN) %>%
   summarize(banyak = n())
-pendidikan
 
 plot_ly(type = "pie", labels = pendidikan$PENDIDIKAN, values = pendidikan$banyak,
         textinfo = "label+percent",
